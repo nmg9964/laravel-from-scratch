@@ -7,7 +7,7 @@ use App\Models\Post;
 
 class PostController extends Controller {
     public function show($title) {
-        $post = Post::where('title', $title)->firstorFail();
+        $post = Post::where('title', $title)->firstOrFail();
 
         return view('test', ['post' => $post]);
     }
