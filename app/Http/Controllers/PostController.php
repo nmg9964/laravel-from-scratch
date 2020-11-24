@@ -5,13 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 class PostController extends Controller {
-    public function show($post) {
-        $posts = ['first-post' => 'This is my first post']; // db simulation
+    public function show($title) {
+        $post = \DB::table('posts')->where('title', $title)->first();
 
-        if (!array_key_exists($post, $posts)) {
-            abort(404, 'POST NOT FOUND');
-        }
-
-        return view('test', ['post' => $posts[$post]]);
+        return view('test', ['post' => $post]);
     }
 }
