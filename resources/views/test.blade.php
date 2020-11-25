@@ -1,5 +1,6 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+@extends ('layout')
+
+@section ('content')
     <h1><?php echo 'Hello World' ?></h1>
     <p>{{ $post->body }}</p>
-</html>
+@endsection
