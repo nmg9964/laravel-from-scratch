@@ -18,3 +18,11 @@ Route::get('/', function () {
 });
 
 Route::get('/posts/{post}', 'App\Http\Controllers\PostController@show');
+
+Route::get('/home', function() {
+    return view('home');
+});
+
+Route::get('/about', function() {
+    return view('about');
+});

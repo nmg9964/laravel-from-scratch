@@ -22,6 +22,21 @@ Released   : 20140225
 
 </head>
 <body>
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><a href="/home">SimpleWork</a></h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="/home" accesskey="1" title="">Homepage</a></li>
+				<li><a href="#" accesskey="2" title="">Our Clients</a></li>
+				<li><a href="/about" accesskey="3" title="">About Us</a></li>
+				<li><a href="#" accesskey="4" title="">Careers</a></li>
+				<li><a href="#" accesskey="5" title="">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
 <div id="wrapper">
 	<div id="page" class="container">
 		<div id="content">
