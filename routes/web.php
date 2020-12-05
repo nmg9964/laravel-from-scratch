@@ -24,5 +24,8 @@ Route::get('/home', function() {
 });
 
 Route::get('/about', function() {
-    return view('about');
+    $articles = App\Models\Article::get();
+    return view('about', ['articles' => $articles]);
 });
+
+// Route::get('/articles/{articleId}', 'App\Http\Controllers\ArticleController@show');
