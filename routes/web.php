@@ -28,4 +28,6 @@ Route::get('/about', function() {
     return view('about', ['articles' => $articles]);
 });
 
-// Route::get('/articles/{articleId}', 'App\Http\Controllers\ArticleController@show');
+Route::get('/articles', 'App\Http\Controllers\ArticleController@index');
+
+Route::get('/articles/{article}', 'App\Http\Controllers\ArticleController@show');
