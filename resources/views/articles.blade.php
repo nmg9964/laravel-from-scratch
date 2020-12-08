@@ -6,9 +6,8 @@
 		<div id="content">
 			<div class="title">
 				<h2>{{ $articles[0]->title }}</h2>
-				<span class="byline">{{ $articles[0]->excerpt }}</span> </div>
+				<span class="byline"><a href="/articles/{{ $articles[0]->id }}">{{ $articles[0]->excerpt }}</a></span> </div>
 			<p><img src="images/banner.jpg" alt="" class="image image-full" /> </p>
-			<p>{{ $articles[0]->body }}</p>
 		</div>
 		<div id="sidebar">
 			<ul class="style1">
