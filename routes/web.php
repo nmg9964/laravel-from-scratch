@@ -23,11 +23,6 @@ Route::get('/home', function() {
     return view('home');
 });
 
-Route::get('/about', function() {
-    $articles = App\Models\Article::get();
-    return view('about', ['articles' => $articles]);
-});
-
 Route::get('/articles', 'App\Http\Controllers\ArticleController@index');
 
 Route::get('/articles/{article}', 'App\Http\Controllers\ArticleController@show');

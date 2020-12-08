@@ -14,6 +14,6 @@ class ArticleController extends Controller
 
     public function show($articleId) {
         $article = Article::where('id', $articleId);
-        return view('article', ['article => $article']);
+        return view('article', ['article' => $article]);
     }
 }
