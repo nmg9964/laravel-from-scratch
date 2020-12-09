@@ -16,4 +16,24 @@ class ArticleController extends Controller
         $article = Article::where('id', $id)->firstOrFail();
         return view('article', ['article' => $article]);
     }
+
+    public function create() {
+
+    }
+
+    public function store() {
+
+    }
+
+    public function edit() {
+
+    }
+
+    public function update() {
+
+    }
+
+    public function destroy() {
+
+    }
 }
