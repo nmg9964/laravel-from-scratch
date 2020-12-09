@@ -12,8 +12,8 @@ class ArticleController extends Controller
         return view('articles', ['articles' => $articles]);
     }
 
-    public function show($articleId) {
-        $article = Article::where('id', $articleId);
+    public function show($id) {
+        $article = Article::where('id', $id)->firstOrFail();
         return view('article', ['article' => $article]);
     }
 }
