@@ -9,16 +9,16 @@ class ArticleController extends Controller
 {
     public function index() {
         $articles = Article::get();
-        return view('articles', ['articles' => $articles]);
+        return view('articles.index', ['articles' => $articles]);
     }
 
     public function show($id) {
         $article = Article::where('id', $id)->firstOrFail();
-        return view('article', ['article' => $article]);
+        return view('articles.show', ['article' => $article]);
     }
 
     public function create() {
-
+        return view('articles.create');
     }
 
     public function store() {
