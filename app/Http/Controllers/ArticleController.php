@@ -13,7 +13,7 @@ class ArticleController extends Controller
     }
 
     public function show($id) {
-        $article = Article::where('id', $id)->firstOrFail();
+        $article = Article::find($id);
         return view('articles.show', ['article' => $article]);
     }
 
@@ -31,8 +31,9 @@ class ArticleController extends Controller
         return redirect('/articles');
     }
 
-    public function edit() {
-
+    public function edit($id) {
+        $article = Article::find($id);
+        return view('articles.edit', ['article' => $article]);
     }
 
     public function update() {
