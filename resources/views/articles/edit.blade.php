@@ -5,8 +5,9 @@
 	<div id="page" class="container">
         <h1>Edit Article</h1>
 
-        <form method="" action="">
+        <form method="POST" action="/articles/{{ $article->id }}">
             @csrf
+            @method('PUT')
 
             <div class="field">
                 <label class="label" for="title">Title</label>
@@ -20,7 +21,7 @@
                 <label class="label" for="excerpt">Excerpt</label>
 
                 <div class="control">
-                    <textarea class="textarea" type="text" name="excerpt"></textarea>
+                    <textarea class="textarea" type="text" name="excerpt" value="{{ $article->excerpt }}"></textarea>
                 </div>
             </div>
 
@@ -28,7 +29,7 @@
                 <label class="label" for="body">Body</label>
 
                 <div class="control">
-                    <textarea class="textarea" type="text" name="body"></textarea>
+                    <textarea class="textarea" type="text" name="body" value="{{ $article->body }}"></textarea>
                 </div>
             </div>
 
