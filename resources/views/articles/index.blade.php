@@ -32,6 +32,9 @@
 						<li><a href="#">Amet turpis feugiat amet</a></li>
 					</ul>
 				</div>
+                <div class="sbox3">
+                    <a class="button" href="/articles/create">Add</a>
+                </div>
 			</div>
 		</div>
 	</div>
