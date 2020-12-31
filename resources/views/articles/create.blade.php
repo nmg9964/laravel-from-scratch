@@ -14,6 +14,10 @@
                 <div class="control">
                     <input class="input" type="text" name="title">
                 </div>
+
+                @error('title')
+                    <p class="help if-danger">{{ $errors->first('title') }}</p>
+                @enderror
             </div>
 
             <div class="field">
@@ -22,6 +26,10 @@
                 <div class="control">
                     <textarea class="textarea" type="text" name="excerpt"></textarea>
                 </div>
+
+                @error('excerpt')
+                    <p class="help if-danger">{{ $errors->first('excerpt') }}</p>
+                @enderror
             </div>
 
             <div class="field">
@@ -30,6 +38,10 @@
                 <div class="control">
                     <textarea class="textarea" type="text" name="body"></textarea>
                 </div>
+
+                @error('body')
+                    <p class="help if-danger">{{ $errors->first('body') }}</p>
+                @enderror
             </div>
 
             <div class="field is-grouped">
