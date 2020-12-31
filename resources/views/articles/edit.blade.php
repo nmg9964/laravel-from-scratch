@@ -51,6 +51,14 @@
                 </div>
             </div>
         </form>
+
+        <form method="POST" action="/articles/{{ $article->id }}">
+            @csrf
+            @method('DELETE')
+
+            <button class="button" type="submit" >Delete</button>
+        </form>
+
     </div>
 </div>
 
