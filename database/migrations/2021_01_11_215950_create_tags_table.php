@@ -19,7 +19,7 @@ class CreateTagsTable extends Migration
             $table->timestamps();
         });
 
-        Schema::create('article_tags', function (Blueprint $table) {
+        Schema::create('article_tag', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('article_id');
             $table->unsignedBigInteger('tag_id');
@@ -40,6 +40,6 @@ class CreateTagsTable extends Migration
     public function down()
     {
         Schema::dropIfExists('tags');
-        Scheme::dropIfExists('article_tags');
+        Schema::dropIfExists('article_tag');
     }
 }
