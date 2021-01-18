@@ -33,7 +33,7 @@
 					</ul>
 				</div>
                 <div class="sbox3">
-                    <a class="button" href="/articles/create">Add</a>
+                    <a class="button" href="/articles/create">New</a>
                 </div>
 			</div>
 		</div>
